@@ -1,0 +1,13 @@
+<?php
+// $Id$ 
+
+/**
+ *  @file
+ *  Embedded Audio Field provider file for soundcloud.com.
+ */
+
+function media_reverbnation_emfield_providers($module, $provider = NULL) {
+  if ($module == 'emaudio') {
+    return drupal_system_listing("$provider\.inc$", drupal_get_path('module', 'media_reverbnation') . "/providers", 'name', 0);
+  }
+}

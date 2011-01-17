@@ -1,0 +1,8 @@
+; $Id$
+name = Media: Reverbnation
+description = emfield provider for reverbnation
+package = Media
+version = 6.x-0.1
+dependencies[] = emaudio
+core = 6.x
+php =
